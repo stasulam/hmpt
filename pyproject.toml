@@ -19,6 +19,20 @@ hmpt = "hmpt.console:main"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.3"
+coverage = {extras = ["toml"], version = "^7.3.2"}
+pytest-cov = "^4.1.0"
+pytest-mock = "^3.12.0"
+
+[tool.coverage.paths]
+source = ["src", "*/site-packages"]
+
+[tool.coverage.run]
+branch = true
+source = ["hmpt"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 100
 
 [build-system]
 requires = ["poetry-core"]
