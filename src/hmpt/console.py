@@ -2,7 +2,7 @@ import textwrap
 
 import click
 
-from . import __version__, wikipedia
+from hmpt import __version__, wikipedia
 
 
 @click.command()

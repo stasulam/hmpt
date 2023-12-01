@@ -1,3 +1,4 @@
+"""Noxfile."""
 import nox
 
 
