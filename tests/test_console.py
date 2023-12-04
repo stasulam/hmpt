@@ -9,6 +9,7 @@ from hmpt import console
 def runner():
     return click.testing.CliRunner()
 
+
 @pytest.fixture
 def mock_wikipedia_random_page(mocker):
     return mocker.patch("hmpt.wikipedia.random_page")
